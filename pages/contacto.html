@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Portafolio Web</title>
+   <!-- Estilos Personales -->
+   <link rel="stylesheet" href="../scss/estilo.scss">
+   <link rel="stylesheet" href="../css/estilo.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <link rel="shortcut icon" href="../images/icons8-website-pastel-glyph-32.png" type="image/x-icon">
+</head>
+
+<body>
+   <header>
+      <nav>
+         <input type="checkbox" id="check">
+         <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+         </label>
+         <a href="../index.html" class="enlace">
+            <img src="../images/Logo2.png" alt="" class="logo">
+         </a>
+         <ul>
+            <li><a class="active" href="../index.html">Inicio</a></li>
+            <li><a href="conoceme.html">Conoceme</a></li>
+            <li><a href="habilidades.html">Habilidades</a></li>
+            <li><a href="Pasatiempos.html">Intereses</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <section class="contact">
+
+      <div class="row">
+
+         <div class="image">
+            <img src="images/contact-img.svg" alt="">
+         </div>
+
+         <h3 class="contactoh3">Dejanos tu Mensaje</h3>
+         <form action="" method="post">
+            <input type="text" name="name" required placeholder="enter your name" maxlength="50" class="box">
+            <input type="text" name="text" required placeholder="enter your number" max="9999999999" min="0" class="box"
+               onkeypress="if(this.value.length == 10) return false;">
+            <input type="email" name="email" required placeholder="enter your email" maxlength="50" class="box">
+            <textarea name="msg" placeholder="enter your message" required class="box" cols="30" rows="10"
+               maxlength="500"></textarea>
+            <input type="submit" value="send message" class="btn" name="send">
+         </form>
+
+      </div>
+
+   </section>
+
+   <hr>
+   <footer class="footer">
+
+      <section class="box-container">
+
+         <div class="box">
+            <img src="../images/email-icon.png" alt="">
+            <h3>Correo Electronico</h3>
+            <a href="villamar959@gmail.com">villamar959@gmail.com</a>
+            <a href="gr16070021@elgrullo.tecmm.edu.mx">gr16070021@elgrullo.tecmm.edu.mx</a>
+         </div>
+
+         <div class="box">
+            <img src="../images/clock-icon.png" alt="">
+            <h3>Horarios de Trabajo</h3>
+            <p>09:00am to 08:00pm </p>
+         </div>
+
+         <div class="box">
+            <img src="../images/map-icon.png" alt="">
+            <h3>Domicilio</h3>
+            <a href="https://www.google.com/maps">Guadalajara Jalisco</a>
+         </div>
+
+         <div class="box">
+            <img src="../images/phone-icon.png" alt="">
+            <h3>our number</h3>
+            <a href="tel:1234567890">+52-317-131-0403</a>
+            <a href="tel:1112223333">+52-317-103-3813</a>
+         </div>
+
+      </section>
+
+      <div class="credit">&copy; Sitio creado por <span>Ing. Villamar</span> | Jr Web Developer</div>
+
+   </footer>
+
+
+
+
+</body>
+
+</html>
